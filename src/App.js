@@ -1,11 +1,19 @@
-import "./App.css";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Reel from "./components/Reel";
+import Navbar from "./components/Navbar";
+import Resume from "./components/Resume";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Meri Burgess</p>
-      </header>
+    <div>
+      <Navbar />
+      <Home />
+      <About />
+      <Projects />
+      <Resume />
+      <Reel />
     </div>
   );
 }
