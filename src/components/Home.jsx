@@ -1,7 +1,7 @@
 import React from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
+import { HiChevronDoubleRight } from "react-icons/hi";
 // import me from "../assets/me.png";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -23,8 +23,8 @@ const Home = () => {
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer text-4xl"
             >
               Find out more
-              <span className="group-hover:rotate-90 duration-300">
-                <HiArrowNarrowRight size={25} className="ml-3" />
+              <span className="group-hover:scale-150 duration-300">
+                <HiChevronDoubleRight size={25} className="ml-3" />
               </span>
             </Link>
           </div>
