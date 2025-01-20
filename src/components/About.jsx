@@ -19,7 +19,7 @@ const About = () => {
           {/* On mobile, only the first image will display */}
           <img
             src="/images/cyr-1.jpg"
-            alt="Image 1"
+            alt="Meri cyr wheel"
             className="rounded-md shadow-lg object-cover w-full h-[400px] lg:h-auto"
           />
         </div>
