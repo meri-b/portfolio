@@ -11,7 +11,7 @@ function Reel() {
       </div>
 
       <div className="w-full lg:w-[60%] text-lg lg:text-xl text-center leading-relaxed">
-      <p>Coming soon!</p>
+      <p>Coming soon</p>
       </div>
 
     </div>
