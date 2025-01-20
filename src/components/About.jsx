@@ -50,10 +50,11 @@ const About = () => {
           </p>
           <br />
           <p>
-            Finally, I'm a human being. I like to roller skate, garden, read,
-            paint, wood carve, play video games, watch reality TV, take long
-            walks with my dog, eat food, and take naps. Having balance in my
-            life is very important to me.
+            Finally, I'm a human being. Having balance in my life is very important to me.
+            I've thought about whether or not to separate my two professional selves into
+            two different websites. In the end, I find it is too challenging to untangle all
+            the parts of myself into branded pieces. I hope that this page manages, in some
+            way, to represent all the parts of who I am, how they intersect, and why that is special.
           </p>
         </div>
       </div>
