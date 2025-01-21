@@ -13,6 +13,9 @@ import Buddy from "./components/projects/buddy";
 import Worm from "./components/projects/worm";
 import BeerQuest from "./components/projects/beerquest";
 import Underflow from "./components/projects/underflow";
+import Stardust from "./components/projects/stardust";
+import CuriousBones from "./components/projects/curiousbones";
+import UnravelDeath from "./components/projects/death";
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
         <Route path="/projects/worm" element={<Worm />} />
         <Route path="/projects/beerquest" element={<BeerQuest />} />
         <Route path="/projects/underflow" element={<Underflow />} />
+        <Route path="/projects/stardust" element={<Stardust />} />
+        <Route path="/projects/curious-bones" element={<CuriousBones />} />
+        <Route path="/projects/unravel-death" element={<UnravelDeath />} />
       </Routes>
 
     </Router>

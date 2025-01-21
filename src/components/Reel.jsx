@@ -39,9 +39,9 @@ function Reel() {
         <h1 className="text-4xl font-bold text-cyan-500">Performance Work</h1>
         <p className="mt-4 text-lg lg:text-2xl max-w-[1000px] mx-auto">
           At this time, I am primarily interested in doing feature performances on cyr wheel,
-          but can also do full solo act or supporting ensemble work on lyra and pole.
+          but can also do full solo acts or supporting ensemble work on lyra and pole.
           Please see this selection of demo videos and full act performances to get a sense of my performance capabilities and style.
-          At this time, I am available for one-off private events as well as short term contracts.
+          I am currently available for one-off private events as well as short term contracts.
         </p>
       </div>
 
