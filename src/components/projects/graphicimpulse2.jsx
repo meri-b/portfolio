@@ -6,7 +6,7 @@ function GraphicImpulse2() {
   return (
       <div
       name="graphicimpulse2"
-      className="h-screen w-full bg-[#0a192f] text-gray-300 pt-[80px] flex flex-col items-center"
+      className="min-h-screen w-full bg-[#0a192f] text-gray-300 pt-[80px] flex flex-col items-center"
       >
         <div className="w-full bg-[#0a192f] text-center py-8">
         <h1 className="text-4xl font-bold text-cyan-500">Graphic Impulse 2.0</h1>
@@ -16,7 +16,7 @@ function GraphicImpulse2() {
         <img
         src={previewImage}
         alt="Preview"
-        className="w-[1000px] h-auto rounded-lg shadow-lg mb-4"
+        className="w-[1400px] h-auto rounded-lg shadow-lg mb-4"
         />
 
         <div className="w-full lg:w-[60%] text-lg lg:text-4xl text-left leading-relaxed mb-4">
@@ -31,6 +31,9 @@ function GraphicImpulse2() {
 
         <div className="w-full lg:w-[60%] text-lg lg:text-xl text-left">
         <p>A full write up will come eventually!</p>
+        <br></br>
+        <br></br>
+        <br></br>
         </div>
 
       </div>

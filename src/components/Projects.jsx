@@ -39,7 +39,7 @@ function Projects() {
     },
     {
       title: "Buddy",
-      description: "An entertainment mobile app for the disabled",
+      description: "Building an android app for a disabled teen",
       imageUrl: buddy,
       link: "/projects/buddy",
     },
@@ -122,9 +122,13 @@ function Projects() {
       </div>
 
       {/* Description Section */}
-      <div className="w-full text-lg lg:text-3xl text-center leading-relaxed px-4 max-w-[1400px] mx-auto">
+      <div className="w-full text-lg lg:text-2xl text-left leading-relaxed px-4 max-w-[1400px] mx-auto">
         <p>
-          This is a landing page to detail all the different tech, art, and tech-meets-art projects I've done. 
+          I have done a number of projects over the years. Some of them were tech focused, some were just art, some had some neat fabrication elements, and some are a blend of everything!
+
+          I wanted a place to collect them so I could point somewhere and say "look at all the stuff I did". This is that place.
+          <br></br>
+          <br></br>
           Please bear with me--Working through the backlog to document old projects is still a work in progress.
         </p>
       </div>
