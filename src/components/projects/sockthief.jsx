@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 
 import previewImage from "../../project_previews/sockthief.jpg"; // Adjust the path accordingly
 
@@ -28,15 +27,7 @@ import imageInTheLint from "../../project_previews/sockthief/inthelint.jpg"
 
 
 function SockThief() {
-  setInterval(() => {
-    [...document.body.children].forEach(el => 
-      console.log(el.tagName, el.className, el.offsetHeight)
-    );
-  }, 500);
-  
-  
   return (
-
       <div
       name="sockthief"
       className="min-h-screen overflow-hidden bg-[#0a192f] text-gray-300 pt-[80px] flex flex-col items-center"
