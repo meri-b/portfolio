@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+
 import previewImage from "../../project_previews/sockthief.jpg"; // Adjust the path accordingly
 
 import imageIntern from "../../project_previews/sockthief/intern.jpg";
@@ -26,47 +28,53 @@ import imageInTheLint from "../../project_previews/sockthief/inthelint.jpg"
 
 
 function SockThief() {
+  setInterval(() => {
+    [...document.body.children].forEach(el => 
+      console.log(el.tagName, el.className, el.offsetHeight)
+    );
+  }, 500);
+  
+  
   return (
+
       <div
       name="sockthief"
-      className="min-h-screen w-full overflow-x-hidden bg-[#0a192f] text-gray-300 pt-[80px] flex flex-col items-center"
+      className="min-h-screen overflow-hidden bg-[#0a192f] text-gray-300 pt-[80px] flex flex-col items-center"
       >
 
         <div className="w-full bg-[#0a192f] text-center py-8">
-        <h1 className="text-4xl font-bold text-cyan-500">Sock Thief</h1>
+        <h1 className="text-4xl font-bold text-cyan-500">The Sock Thief</h1>
         </div>
 
 
         <img
         src={previewImage}
         alt="Preview"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        height="400"
+        width="700"
         />
+        <br></br>
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-4xl text-left leading-relaxed mb-4">
+        <div className="lg:w-[60%] text-lg lg:text-4xl text-left leading-relaxed mb-4">
         <p><b>TLDR:</b>  I designed and built sets for a stop motion short film overseen by Stephen 
         Chiodo while at Laguna College of Art and Design in 2013. I guess I also animated some of the scenes? 
         </p>
         </div>
 
-        
-        <div className="w-full lg:w-[60%] flex justify-center my-4">
-          <iframe 
-            height="500" 
-            className="w-full max-w-[1200px] relative overflow-hidden"
-            src="https://www.youtube.com/embed/VSnr5RHAPPc" 
-            title="Sock Thief Preview" 
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowFullScreen
-          ></iframe>
-        </div>
-        <p>Here is the actual film, which you can watch and everything!</p>
-
-
+        <div className="relative w-full max-w-[1200px] h-[500px] overflow-hidden">
+            <iframe 
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/VSnr5RHAPPc" 
+              title="Sock Thief Preview" 
+              frameBorder="0" 
+              allowFullScreen
+              tabIndex="-1"
+            ></iframe>
+          </div>
+          <p>Here is the actual film, which you can watch and everything!</p>
         <br></br>  
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>Ok, so to go way back, in high school I never quite knew what I wanted to do with my life. 
           I think that is typical, but I felt a lot of pressure to figure it out right away at the time. 
           The only classes I was really into in school were art class and technical theater. At some point,
@@ -97,13 +105,13 @@ function SockThief() {
         <img
         src={imageIntern}
         alt="intern"
-        className="w-[800px] h-auto rounded-lg shadow-lg mb-4"
+        width="1000" 
+        height="400" 
         />
         <div><p>I cannot find any record of what episode I actually helped on, but here is some proof I did a very stupid thing</p></div>
         <br></br>
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
-
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>
         LCAD is a very small art school and had no stop motion classes on the curriculum, which was disappointing. 
         The summer of 2013 they put together a special summer long master class, designed to produce a stop motion 
@@ -121,12 +129,13 @@ function SockThief() {
         <img
         src={imageBlizzard}
         alt="blizzard"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        width="600" 
+        height="400" 
         />
         <div><p>Sneaky Blizzard folks crushing my dreams</p></div>
         <br></br>
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>
         So under great emotional and mental duress, I helped create this short film with a dozen or so other students over 
         the summer. Given the state I was in, and the fact that I now write this 12 years later, my memories of this 
@@ -155,12 +164,13 @@ function SockThief() {
         <img
         src={imageInTheLint}
         alt="lint"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        width="600" 
+        height="400" 
         />
         <br></br>
 
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>2</p>
         <p>
           For some time, we referred to the project/film title as “Goblints” and I’m still mad that we didn’t make this the official title.
@@ -172,13 +182,14 @@ function SockThief() {
         <img
         src={imageGoblints}
         alt="poster"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        width="600" 
+        height="800" 
         />
         <div><p>A mock poster I made at some point. No we did not use it!</p></div>
         <br></br>
 
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>3</p>
         <p>With my background in theater and set building, I was drawn to the set and prop building portion of the film. 
         I particularly took ownership of the laundromat. Here are some sketches and process photos.  
@@ -190,14 +201,17 @@ function SockThief() {
         <img
         src={imageSketchLaundromat}
         alt="sketch"
-        className="w-[1000px] h-auto rounded-lg shadow-lg mb-4"
+        width="1000" 
+        height="600" 
         />
         <br></br>
 
         <img
         src={imageLaundromatProgress}
         alt="progress"
-        className="w-[1000px] h-auto rounded-lg shadow-lg mb-4"
+        width="1000" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <br></br>
 
@@ -205,7 +219,9 @@ function SockThief() {
         <img
         src={imageLaundromatFinished}
         alt="finished"
-        className="w-[1000px] h-auto rounded-lg shadow-lg mb-4"
+        width="1000" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <br></br>
 
@@ -214,7 +230,9 @@ function SockThief() {
         <img
         src={imageSketchVillageCompilation}
         alt="sketches"
-        className="w-[1000px] h-auto rounded-lg shadow-lg mb-4"
+        width="1000" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <br></br>
 
@@ -222,12 +240,14 @@ function SockThief() {
         <img
         src={imageSketchMiscCompilation}
         alt="sketches"
-        className="w-[1000px] h-auto rounded-lg shadow-lg mb-4"
+        width="1000" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <br></br>
 
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>4</p>
         <p>
         As LCAD students, it was our constant inside joke to find ways to make references to our department head, Dave Kuhn, in anything we made. 
@@ -239,7 +259,9 @@ function SockThief() {
         <img
         src={imageDryer}
         alt="dryer"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        width="600" 
+        height="400" 
+        className="rounded-lg shadow-lg mb-4"
         />
         <div><p>KUHN brand dryers were rated best in class by LCAD students</p></div>
         <br></br>
@@ -247,14 +269,16 @@ function SockThief() {
         <img
         src={imageBGPoster}
         alt="poster"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        width="600" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <div><p>We also decided to bring Stephen into the tradition. If you look very closely at the posters in the laundromat,
           you might find this poster.</p></div>
         <br></br>
 
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>5</p>
         <p>
           A LOT of the lint-world sets used real dryer lint. For some reason, my roommates and I would empty our dryer lint into a
@@ -271,13 +295,15 @@ function SockThief() {
         <img
         src={imageLint}
         alt="lint"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        width="600" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <div><p>Yes, at some point I actually took a photo of the lint I brought in.</p></div>
         <br></br>
 
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>6</p>
         <p>
         Actually, a lot of the set pieces came from us just wandering aisles at Home Depot looking for little things that resembled 
@@ -290,7 +316,9 @@ function SockThief() {
         <img
         src={imageDryerProto}
         alt="dryer"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        width="600" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <div><p>The dryer faces were simply just plastic lids</p></div>
         <br></br>
@@ -299,7 +327,9 @@ function SockThief() {
         <img
         src={imageHouse}
         alt="house"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        width="600" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <div><p>One of the goblint village house prototypes...mainly just trash stuck to cardboard</p></div>
         <br></br>
@@ -307,7 +337,9 @@ function SockThief() {
         <img
         src={imageChairs}
         alt="house"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        width="600" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <div><p>The chairs in the laundromat were just paper cups cut in half.</p> </div>
          <div><p>The fire extinguisher was carved out of wood with a dremel by
@@ -315,7 +347,7 @@ function SockThief() {
         <br></br>
 
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>7</p>
         <p>
         I remember we got a lot of lessons in armature and puppet fabrication from Stephen. It seemed tedious and annoying and I was not particularly
@@ -328,13 +360,15 @@ function SockThief() {
         <img
         src={imagePuppets}
         alt="Preview"
-        className="w-[1000px] h-auto rounded-lg shadow-lg mb-4"
+        width="1000" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <div><p>I was responsible for none of the things pictured here</p></div>
         <br></br>
 
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>8</p>
         <p>
         I seriously only remember building sets, but the film credits me as an animator as well, and some of my writings from this time reference the 
@@ -347,12 +381,14 @@ function SockThief() {
         <img
         src={gifAnimation}
         alt="animation"
-        className="w-[1000px] h-auto rounded-lg shadow-lg mb-4"
+        width="800" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <div><p>I DID find this animation test on a hard drive. So I guess I animated something at SOME point.</p></div>
         <br></br>
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>9</p>
         <p>
         Because of my mental health, I was not doing a very good job at feeding myself (which was probably a vicious cycle issue). 
@@ -364,14 +400,16 @@ function SockThief() {
 
         <img
         src={imagePoster2}
-        alt="Preview"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        alt="Poster"
+        width="600" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <div><p>Another poster I made. I remember finding this hilarious at the time, but now I don't get it. Maybe it had to do with malnourishment.</p></div>
         <br></br>
 
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>10</p>
         <p>
         We got a whole damn orchestra to do the score for the film. The score was arranged by a real-deal hollywood man,<u><a href="https://www.imdb.com/name/nm0808596/">James McKee Smith</a></u>,
@@ -386,8 +424,10 @@ function SockThief() {
 
         <img
         src={imageFetus5}
-        alt="Preview"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        alt="fetus5"
+        width="600" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <div><p>We liked to mess around with fabrication supplies in the downtime. I dubbed these the Fetus 5, minus 1. A prestigious production indeed!</p></div>
         <br></br>
@@ -395,15 +435,17 @@ function SockThief() {
 
         <img
         src={imagePuppet2}
-        alt="Preview"
-        className="w-[600px] h-auto rounded-lg shadow-lg mb-4"
+        alt="cursedpuppet"
+        width="600" 
+        height="400" 
+        className="overflow-hidden rounded-lg shadow-lg mb-4"
         />
         <div><p>Another cursed puppet.</p></div>
         <br></br>
 
 
 
-        <div className="w-full lg:w-[60%] text-lg lg:text-2xl text-left">
+        <div className="w-full lg:w-[60%] overflow-hidden text-lg lg:text-2xl text-left">
         <p>
         Now, you’ve been poking around on my website obviously, so you can clearly see I did not become an animator or end up 
         in the film or television industry whatsoever. In fact, I did not return to LCAD after doing this masterclass. 
@@ -426,16 +468,19 @@ function SockThief() {
         </p>
         </div>
         <br></br>
-        <iframe 
-        src="https://player.vimeo.com/video/75633641" 
-        height="500" 
-        className="w-full max-w-[1200px] relative overflow-hidden"
-        frameBorder="0" 
-        allow="autoplay; fullscreen; picture-in-picture" 
-        allowFullScreen
-        title="Vimeo Video"
-          ></iframe>
 
+
+        <div className="relative w-full max-w-[1200px] h-[500px] overflow-hidden">
+          <iframe
+            src="https://player.vimeo.com/video/75633641"
+            height="500"
+            className="w-full h-full"
+            frameBorder="0"
+            allowFullScreen
+            title="Vimeo Video"
+          ></iframe>
+        </div>
+              
         <br></br>
         <br></br>
 

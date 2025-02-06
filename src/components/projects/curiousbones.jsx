@@ -6,7 +6,7 @@ function CuriousBones() {
   return (
       <div
       name="curiousbones"
-      className="h-screen w-full bg-[#0a192f] text-gray-300 pt-[80px] flex flex-col items-center"
+      className="min-h-screen w-full bg-[#0a192f] text-gray-300 pt-[80px] flex flex-col items-center"
       >
         <div className="w-full bg-[#0a192f] text-center py-8">
         <h1 className="text-4xl font-bold text-cyan-500">Curious Bones</h1>
