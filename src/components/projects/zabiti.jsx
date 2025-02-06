@@ -1,18 +1,18 @@
 import React from "react";
-import previewImage from "../../project_previews/curiousbones.jpg"; // Adjust the path accordingly
+import previewImage from "../../project_previews/zabiti2.jpg"; // Adjust the path accordingly
 
 
-function CuriousBones() {
+function Zabiti() {
   return (
       <div
-      name="curiousbones"
+      name="zabiti"
       className="h-screen w-full bg-[#0a192f] text-gray-300 pt-[80px] flex flex-col items-center"
       >
         <div className="w-full bg-[#0a192f] text-center py-8">
-        <h1 className="text-4xl font-bold text-cyan-500">Curious Bones</h1>
+        <h1 className="text-4xl font-bold text-cyan-500">Zabiti</h1>
         </div>
 
-
+      
         <img
         src={previewImage}
         alt="Preview"
@@ -20,8 +20,9 @@ function CuriousBones() {
         />
 
         <div className="w-full lg:w-[60%] text-lg lg:text-4xl text-left leading-relaxed mb-4">
-        <p><b>TLDR:</b> In 2023, I built a POC Android app for self led physical education exploration
-        for students ages 13-18.
+        <p><b>TLDR:</b> In 2019, I performed a warehouse transformed into a cursed forest as Ti, 
+        the black footed ferret familiar of a witch, in an original immersive circus show inspired by Russian 
+        Fairytales. This included a duet performance on a custom welded tree shaped pole apparatus.
         </p>
         </div>
 
@@ -31,8 +32,9 @@ function CuriousBones() {
         <p>A full write up will come eventually!</p>
         </div>
 
+
       </div>
     );
 
 }
-export default CuriousBones;
+export default Zabiti;

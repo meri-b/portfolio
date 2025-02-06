@@ -16,6 +16,12 @@ import Underflow from "./components/projects/underflow";
 import Stardust from "./components/projects/stardust";
 import CuriousBones from "./components/projects/curiousbones";
 import UnravelDeath from "./components/projects/death";
+import Inanimate48 from "./components/projects/inanimate48";
+import PSONatls from "./components/projects/psonatls";
+import SockThief from "./components/projects/sockthief";
+import Zabiti from "./components/projects/zabiti";
+import Gnome from "./components/projects/gnome";
+import Miniramp from "./components/projects/miniramp";
 
 function App() {
   return (
@@ -37,6 +43,13 @@ function App() {
         <Route path="/projects/stardust" element={<Stardust />} />
         <Route path="/projects/curious-bones" element={<CuriousBones />} />
         <Route path="/projects/unravel-death" element={<UnravelDeath />} />
+        <Route path="/projects/inanimate48" element={<Inanimate48 />} />
+        <Route path="/projects/miniramp" element={<Miniramp />} />
+        <Route path="/projects/gnome" element={<Gnome />} />
+        <Route path="/projects/psonatls" element={<PSONatls />} />
+        <Route path="/projects/sockthief" element={<SockThief />} />
+        <Route path="/projects/zabiti" element={<Zabiti />} />
+
       </Routes>
 
     </Router>

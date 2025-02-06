@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"; // For linking to project detail pages
 
 import graphicimpulse1 from '../project_previews/graphicimpulse1.jpg';
-import graphicimpulse2 from '../project_previews/graphicimpulse2.png';
+import graphicimpulse2 from '../project_previews/ThesisPoster.jpg';
 import buddy from '../project_previews/buddy.jpg';
 import beerquest from '../project_previews/beerquest.jpg';
 import worm from '../project_previews/worm.jpg';
@@ -10,6 +10,12 @@ import underflow from '../project_previews/underflow.jpg';
 import curiousbones from '../project_previews/curiousbones.jpg';
 import stardust from '../project_previews/stardust.jpg';
 import death from '../project_previews/deathsunravel.jpg';
+import inanimate48 from "../project_previews/inanimate48.jpg";
+import miniramp from "../project_previews/ramp6.jpg";
+import gnome from "../project_previews/gnome1.jpg";
+import psonatls from "../project_previews/psonatls.jpg";
+import zabiti from "../project_previews/zabiti2.jpg";
+import sockthief from "../project_previews/sockthief.jpg";
 
 function Projects() {
   const projects = [
@@ -18,6 +24,18 @@ function Projects() {
       description: "A teenage girl looks to answer the ultimate question",
       imageUrl: worm,
       link: "/projects/worm",
+    },
+    {
+      title: "Inanimate 48",
+      description: "A community centric virtual dance-meets-film festival",
+      imageUrl: inanimate48,
+      link: "/projects/inanimate48",
+    },
+    {
+      title: "Feminom-illuminati-nom",
+      description: "Building a DIY half pipe in my backyard",
+      imageUrl: miniramp,
+      link: "/projects/miniramp",
     },
     {
       title: "Buddy",
@@ -44,6 +62,24 @@ function Projects() {
       link: "/projects/unravel-death",
     },
     {
+      title: "PSO Nationals",
+      description: "Becoming the 2020 National Artistic Champion",
+      imageUrl: psonatls,
+      link: "/projects/psonatls",
+    },
+    {
+      title: "Gnome Away From Home",
+      description: "Immersive circus in the time of COVID",
+      imageUrl: gnome,
+      link: "/projects/gnome",
+    },
+    {
+      title: "Zabiti",
+      description: "Embodying the black footed ferret in immersive circus",
+      imageUrl: zabiti,
+      link: "/projects/zabiti",
+    },
+    {
       title: "Graphic Impulse 2.0",
       description: "Teaching an AI to dance with me",
       imageUrl: graphicimpulse2,
@@ -63,9 +99,15 @@ function Projects() {
     },
     {
       title: "Wearables: Stardust",
-      description: "A programmed LED space costume",
+      description: "A programmable LED space costume",
       imageUrl: stardust,
       link: "/projects/stardust",
+    },
+    {
+      title: "The Sock Thief",
+      description: "Making a stop motion animated short with Stephen Chiodo",
+      imageUrl: sockthief,
+      link: "/projects/sockthief",
     },
   ];
 
