@@ -16,9 +16,16 @@ import gnome from "../project_previews/gnome1.jpg";
 import psonatls from "../project_previews/psonatls.jpg";
 import zabiti from "../project_previews/zabiti2.jpg";
 import sockthief from "../project_previews/sockthief.jpg";
+import sfd from "../project_previews/sfd_cover.jpg";
 
 function Projects() {
   const projects = [
+    {
+      title: "Slated For Demolition",
+      description: "A choice based text game built in Twine",
+      imageUrl: sfd,
+      link: "/projects/slatedfordemolition",
+    },
     {
       title: "Would you still love me if I was a worm?",
       description: "A teenage girl looks to answer the ultimate question",

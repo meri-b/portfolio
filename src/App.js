@@ -22,6 +22,7 @@ import SockThief from "./components/projects/sockthief";
 import Zabiti from "./components/projects/zabiti";
 import Gnome from "./components/projects/gnome";
 import Miniramp from "./components/projects/miniramp";
+import SlatedForDemolition from "./components/projects/slatedfordemolition";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path="/projects/psonatls" element={<PSONatls />} />
         <Route path="/projects/sockthief" element={<SockThief />} />
         <Route path="/projects/zabiti" element={<Zabiti />} />
+        <Route path="/projects/slatedfordemolition" element={<SlatedForDemolition />} />
 
       </Routes>
 
